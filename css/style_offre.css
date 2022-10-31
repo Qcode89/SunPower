@@ -1,0 +1,586 @@
+/* --- Font --- */
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../font/Quicksand-Regular.ttf") format("truetype"),
+        url("../font/Quicksand-Bold.ttf") format("truetype"),
+        url("../font/Quicksand-Light.ttf") format("truetype");
+}
+
+
+/* --- Debut Header --- */
+
+/* --- Typographie --- */
+
+
+body h1 {
+    font-size: 50px;
+    color: #0C9B18;
+    font-family: "Quicksand";
+    font-weight: bold;
+    max-width: 100%;
+    height: auto;
+
+}
+
+body h2 {
+    font-size: 27px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Quicksand";
+
+}
+
+body h3 {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Quicksand";
+}
+
+body h4 {
+    font-size: 13px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Quicksand";
+}
+
+body p {
+    font-size: 12px;
+    color: #000000;
+    font-family: "Quicksand";
+}
+
+body a {
+    text-decoration: none;
+    font-size: 7px;
+    font-weight: bold;
+    color: #6ACC1A;
+    font-family: "Quicksand";
+    text-align: center;
+}
+
+/* --- Contour --- */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* --- Logo --- */
+
+.menu_logo {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.menu img {
+    width: 10%;
+    margin: 5px 10px 5px 10px;
+
+}
+
+
+.menu h1 {
+    text-align: left;
+    margin-left: 50px;
+}
+
+/* --- Début main --- */
+
+
+/* --- Début banniere --- */
+.banniere_offre {
+    width: 100%;
+}
+
+.banniere_offre img {
+    max-width: 100%;
+}
+
+/* --- fin banniere --- */
+
+
+/* --- Début titre page --- */
+.titre_page_offre {
+    text-align: center;
+    margin: 2rem;
+}
+
+.ligne {
+    border-bottom: 1px solid #6ACC1A;
+    margin: auto;
+    width: 20%;
+}
+
+/* --- fin titre page  --- */
+
+/* --- Début section produit --- */
+
+.section_produit {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    margin-top: 2rem;
+}
+
+.section_produit img {
+    min-width: 20%;
+}
+
+.section_produit_texte {
+    margin-left: 1rem;
+}
+
+.section_produit_texte p {
+    margin: 1rem 0;
+}
+
+.section_produit_texte img {
+    display: none;
+}
+
+/* --- fin section produit --- */
+
+
+/* --- Début section Montpellier --- */
+/* --- Début Titre Montpellier --- */
+.section_mtp_titre {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* --- Fin Titre Montpellier --- */
+
+/* Début section Contenu Montpellier */
+
+.section_mtp_contenu {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 4rem;
+}
+
+.section_mtp_contenu img {
+    padding-bottom: 4rem;
+}
+
+.section_mtp_contenu p {
+    margin: 1rem 0;
+}
+
+
+/* Fin section Contenu Montpellier */
+
+
+
+/* Début section carte Montpellier */
+.section_mtp_carte {
+    width: 70%;
+    margin: auto;
+}
+
+.section_mtp_carte h3 {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.section_mtp_carte_image {
+    display: flex;
+    align-items: center;
+}
+
+.section_mtp_carte iframe {
+    width: 100%;
+    height: 480px;
+    margin: auto;
+}
+
+.section_mtp_carte_image {
+    width: 15%;
+}
+
+.carte_image_logo_mtp img {
+    width: 100%;
+}
+
+.carte_image_logo_occ img {
+    width: 90%;
+    padding-left: 0.5rem;
+}
+
+/* Fin section carte Montpellier */
+/* --- fin section Montpellier --- */
+
+
+
+/* --- Début section Toulouse --- */
+/* --- Début Titre Toulouse --- */
+.section_tou_titre {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.section_tou {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+
+}
+
+.section_tou p {
+    margin-bottom: 1rem;
+}
+
+.section_tou h4 {
+    margin-bottom: 2rem;
+}
+
+.section_tou_image {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-bottom: 1rem;
+}
+
+.section_tou img {
+    width: 100%;
+}
+
+.section_tou_logo {
+    width: 10%;
+    text-align: right;
+}
+
+
+/* --- Fin Titre Toulouse --- */
+/* --- Fin section Toulouse --- */
+
+/* --- fin main --- */
+
+
+/* --- Début Footer --- */
+
+.footer {
+    background-color: #757575;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* --- Réseaux sociaux --- */
+.footer_suivre {
+    display: flex;
+    align-items: center;
+    margin: 1em 3em 0 3em;
+
+}
+
+.footer_suivre2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+
+.footer_contact {
+
+    text-align: right;
+}
+
+.footer_fin {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 12px;
+    font-family: "Quicksand";
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 12px;
+    font-family: "Quicksand";
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+.footer_fin {
+    color: #ffffff;
+}
+
+.footer img {
+    width: auto;
+    height: 25px;
+}
+
+
+.mention_fin {
+    border-top: 1px solid #FDC50D;
+    margin: 0 3rem;
+}
+
+
+/* --- Fin Footer --- */
+
+
+
+/* --- Media Queries --- */
+
+
+/* --- nav bar --- */
+
+@media (min-width: 1150px) {
+
+    #closeBtn {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .menu li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .border_right_navbar {
+        border-right: 1px solid #FDC50D;
+    }
+
+    .border_left_navbar {
+        border-left: 1px solid #FDC50D;
+    }
+
+    .menu a {
+        font-size: 23px;
+        color: #000000;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+
+    .menu a:hover {
+        -webkit-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+        transform: scale(1.07);
+        color: #107207;
+    }
+
+    #offre {
+        color: #107207;
+    }
+
+    .sidenav {
+        width: 100%;
+        display: flex;
+        margin-top: 2%;
+    }
+
+    .footer img:hover {
+        height: 40px;
+    }
+
+}
+
+/* --- burger menu --- */
+
+@media (max-width: 1150px) {
+    .sidenav {
+        font-size: 100px;
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: -250px;
+        background-color: rgba(212, 255, 176, 0.85);
+        padding-top: 60px;
+        transition: right 0.5s ease;
+    }
+
+    .border_right_navbar {
+        border-bottom: 1px solid #000000;
+        margin: 0 10%;
+    }
+
+    .border_left_navbar {
+        border-top: 1px solid #000000;
+        margin: 0 10%;
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        opacity: 1;
+    }
+
+    .sidenav a {
+        padding: 10px 10px 10px 1px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        opacity: 1;
+    }
+
+    .sidenav a:hover {
+        color: #111111;
+        text-shadow: 0 0 1.5px #818181;
+        transition: 0.2s;
+    }
+
+    .sidenav.active {
+        right: 0;
+    }
+
+    /* bouton qui ferme */
+
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: #0C9B18;
+        border-radius: 5px;
+        margin: 6px 0;
+    }
+}
+
+/* ---  fin burger menu --- */
+
+/* --- Fin Header --- */
+
+
+/* Lignes de séparation */
+
+@media screen and (max-width : 1300px) {
+    .ligne {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width : 847px) {
+    .ligne {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width : 540px) {
+    .ligne {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .ligne {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width : 1300px) {
+    .section_produit img {
+        width: 35%;
+    }
+
+}
+
+@media screen and (max-width : 1000px) {
+    .section_produit {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    .section_produit img {
+        margin-bottom: 1rem;
+    }
+
+    .section_produit_texte img {
+        display: block;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+    }
+
+    .section_mtp_contenu {
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem
+    }
+
+    .section_tou {
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .section_tou_titre {
+        padding-bottom: 1rem;
+    }
+
+    .section_mtp_titre {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width : 450px) {
+
+    h1 {
+        display: none
+    }
+
+    .titre_page_offre {
+        font-size: 20px;
+    }
+
+
+    .section_tou {
+        padding-top: 2rem;
+    }
+
+    .section_tou_titre {
+        padding-top: 2rem;
+    }
+
+
+    .section_mtp_contenu {
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .section_mtp_contenu img {
+        padding-bottom: 1rem;
+    }
+}

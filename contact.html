@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SunPower - Nous contacter</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autors" content="Quentin GRAMAGE, Clement COISEAUD, Joffrey PRATLONG">
+    <meta name="description" content="Formulaires de contact avec les clients">
+    <link rel="stylesheet" href="css/style_contact.css">
+    <link rel="icon" type="icon" href="images/logo_sunpower_ok.jpg">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/style.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Début header -->
+
+    <header class="menu">
+
+        <div class="menu_logo">
+            <img src="images/logo_sunpower_ok.jpg" alt="Logo Sunpower">
+
+            <h1>SunPower</h1>
+        </div>
+
+        <!-- NAV BAR -->
+
+        <nav>
+            <h2>
+                <div id="mySidenav" class="sidenav">
+                    <a id="closeBtn" href="#" class="close">&times;</a>
+                    <ul>
+                        <li><a href="index.html" id="accueil">Accueil</a></li>
+                        <ul class="border_left_navbar">
+                            <li class="border_right_navbar"><a href="offre.html" id="offre">Offre et projets</a></li>
+                        </ul>
+                        <li class="border_right_navbar"><a href="r_d.html" id="r&d">Recherche et développement</a></li>
+                        <li class="border_right_navbar"><a href="accompagnement.html" id="accompagnement">Notre
+                                accompagnement</a></li>
+                        <li class="active"><a href="contact.html" id="contact">Nous contacter</a></li>
+                    </ul>
+                </div>
+                <!-- Bouton visuel du burger -->
+                <a href="#" id="openBtn">
+                    <span class="burger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+            </h2>
+        </nav>
+
+        <!-- FIN NAV BAR -->
+
+    </header>
+
+    <!-- Fin header -->
+
+    </header>
+
+    <!-- Fin header -->
+
+    <!-- _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ -->
+
+    <!-- Début main -->
+
+    <main>
+
+        <!--Bannière Main-->
+        <div class="banniere">
+            <img src="images/banniere_contact.webp" alt="bannière contact">
+        </div>
+        <h2 class="titre_2" id="titre_2_id">Besoin d'informations ? D'un devis ? Contactez-nous à l'aide du formulaire
+            ci-dessous <br><br><br>
+            <p id="choisissez_votre_situation_titre">Choisissez votre situation :</p>
+        </h2>
+        <!--Fin Bannière Main-->
+
+
+        <!--Sélection type de client-->
+
+        <section class="select_container">
+            <div class="select_icon" id="section_icon_id">
+                <a id="bouton_icon1" onclick="displayPartForm()" href="#formulaire">
+
+                    <div class="select_card1">
+                        <img src="images/icone_particuliers.png" alt="icone particuliers">
+                        <h2 class="contact_titre">Particulier</h2>
+                    </div>
+                </a>
+
+                <a id="bouton_icon2" href="#formulaire" onclick="displayEntrForm()">
+                    <div class="select_card2">
+                        <img src="images/Entreprise.png" alt="icone Entreprise">
+                        <h2 class=" contact_titre">Entreprise / Collectivité</h2>
+                    </div>
+                </a>
+
+                <a id="bouton_icon3" href="#formulaire" onclick="displaySyndForm()">
+
+                    <div class="select_card3">
+                        <img src="images/Syndicat.png" alt="icone Syndicat">
+                        <h2 class=" contact_titre" id="contact_titre_synd">Syndicat de copropriété</h2>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Fin selection type de client -->
+
+        <!--Formulaire de contact-->
+
+        <section class="formulaire_background">
+            <div class="formulaire_container">
+                <div id="formulaire">
+
+                    <div class="formulaire_contact_part" id="formulaire_part">
+
+                        <form action="#" id="formulaire_error_part" method="post">
+                            <h3 id="titre_form_part">Formulaire de contact - Particulier</h3>
+
+                            <div class="identite_part" id="identite_part">
+                                <label for="nom_part"></label>
+                                <input placeholder="Nom" type="text" name="nom_part" id="nom_part">
+                                <div class="error invisible">Le champ Nom doit être renseigné</div>
+                                <label for="prenom_part"></label>
+                                <input placeholder="Prénom" type="text" name="prenom_part" id="prenom_part">
+                                <div class="error invisible">Le champ Prénom doit être renseigné</div>
+                            </div>
+                            <div>
+                                <label for="tel_part"></label>
+                                <input placeholder="Numéro de Téléphone" type="tel" minlength="9" maxlength="12"
+                                    name="tel_part" id="tel_part">
+                                <div class="error invisible">Le champ Téléphone doit être renseigné et être un nombre
+                                </div>
+                                <label for="mail_part"></label>
+                                <input placeholder="E-mail" type="email" name="mail_part" id="mail_part">
+                                <div class="error invisible">Le champ Email doit être renseigné</div>
+                            </div>
+                            <div class="adresse_part">
+                                <label for="adresse_part"></label>
+                                <input placeholder="Adresse" type="text" name="adresse_part" id="adresse_part">
+                                <div class="error invisible">Le champ Adresse doit être renseigné</div>
+                                <label for="ville_part"></label>
+                                <input placeholder="Ville" type="text" name="ville_part" id="ville_part">
+                                <div class="error invisible">Le champ Ville doit être renseigné</div>
+                                <label for="code_postal_part"></label>
+                                <input placeholder="Code Postal" type="text" name="code_postal_part" id="cp_part">
+                                <div class="error invisible">Le champ Code postal doit être renseigné et être un nombre
+                                </div>
+                            </div>
+                            <label for="projet_part"></label>
+                            <textarea class="text_form" placeholder="Description du projet..." name="projet_part"
+                                id="projet_part" rows="4" cols="50" wrap="hard" maxlength="500"></textarea>
+                            <div class="error invisible">Le champ Description doit être renseigné</div>
+                            <div class=dossier_part>
+                                <label for="document_part"></label>
+                                <input type="file" id="document_part" name="document_part" accept=".pdf">
+                                <button class="button_envoyer">Envoyer</button>
+                            </div>
+                            <p>.PDF</p>
+                        </form>
+                    </div>
+
+                    <div class="formulaire_contact_entr" id="formulaire_entr">
+                        <form action="#" id="formulaire_error_entr" method="post">
+                            <h3 id="titre_form_entr">Formulaire de contact - Entreprise / Collectivité</h3>
+                            <div class="identite_entr">
+                                <label for="nom_resp_entr"></label>
+                                <input placeholder="Nom (Responsable)" type="text" name="nom_resp_entr"
+                                    id="nom_resp_entr">
+                                <div class="error invisible">Le champ Nom (Resposable) doit être renseigné</div>
+                                <label for="prenom_resp_entr"></label>
+                                <input placeholder="Prénom (Responsable)" type="text" name="prenom_resp_entr"
+                                    id="prenom_resp_entr">
+                                <div class="error invisible">Le champ Prénom (Resposable) doit être renseigné</div>
+                            </div>
+                            <div>
+                                <label for="tel_entr"></label>
+                                <input placeholder="Numéro de Téléphone" type="tel" minlength="9" maxlength="12"
+                                    name="tel_entr" id="tel_entr">
+                                <div class="error invisible">Le champ Téléphone doit être renseigné et être un nombre
+                                </div>
+                                <label for="mail_entr"></label>
+                                <input placeholder="E-mail" type="email" name="mail_entr" id="mail_entr">
+                                <div class="error invisible">Le champ Email doit être renseigné</div>
+                            </div>
+                            <div class="adresse_entr">
+                                <label for="Adresse_entr"></label>
+                                <input placeholder="Adresse" type="text" name="Adresse_entr" id="adresse_entr">
+                                <div class="error invisible">Le champ Adresse doit être renseigné</div>
+                                <label for="ville_entr"></label>
+                                <input placeholder="Ville" type="text" name="ville_entr" id="ville_entr">
+                                <div class="error invisible">Le champ Ville doit être renseigné</div>
+                                <label for="code_postal_entr"></label>
+                                <input placeholder="Code Postal" type="text" name="code_postal_entr" id="cp_entr">
+                                <div class="error invisible">Le champ Code postal doit être renseigné et être un nombre
+                                </div>
+                            </div>
+                            <label for="rs_entr"></label>
+                            <input placeholder="Raison Sociale" type="text" name="rs_entr" id="rs_entr">
+                            <div class="error invisible">Le champ Raison Sociale doit être renseigné</div>
+                            <label for="projet_entr"></label>
+                            <textarea class="text_form" placeholder="Description du projet..." name="projet_entr"
+                                id="projet_entr" rows="4" cols="50" wrap="hard" maxlength="500"></textarea>
+                            <div class="error invisible">Le champ Description doit être renseigné</div>
+                            <div class=dossier_entr>
+                                <label for="document_entr"></label>
+                                <input type="file" id="document_entr" name="document_entr" accept=".pdf">
+                                <button class="button_envoyer">Envoyer</button>
+                            </div>
+                            <p>.PDF</p>
+                        </form>
+                    </div>
+
+                    <div class="formulaire_contact_synd" id="formulaire_synd">
+                        <form action="#" id="formulaire_error_synd" method="post">
+                            <h3 id="titre_form_synd1">Formulaire de contact - Syndicat de copropriété</h3>
+                            <div class="identite_synd">
+                                <label for="nom_resp_synd"></label>
+                                <input placeholder="Nom (Responsable)" type="text" name="nom_resp_synd"
+                                    id="nom_resp_synd">
+                                <div class="error invisible">Le champ Nom (Resposable) doit être renseigné</div>
+                                <label for="prenom_resp_synd"></label>
+                                <input placeholder="Prénom (Responsable)" type="text" name="prenom_resp_synd"
+                                    id="prenom_resp_synd">
+                                <div class="error invisible">Le champ Prénom (Resposable) doit être renseigné</div>
+                            </div>
+                            <div>
+                                <label for="tel_synd"></label>
+                                <input placeholder="Numéro de Téléphone" minlength="9" maxlength="12" type="tel"
+                                    name="tel_synd" id="tel_synd">
+                                <div class="error invisible">Le champ Téléphone doit être renseigné et être un nombre
+                                </div>
+                                <label for="mail_synd"></label>
+                                <input placeholder="E-mail" type="email" name="mail_synd" id="mail_synd">
+                                <div class="error invisible">Le champ Email doit être renseigné</div>
+                            </div>
+                            <div class="adresse_entr">
+                                <label for="Adresse_synd"></label>
+                                <input placeholder="Adresse" type="text" name="Adresse_synd" id="adresse_synd">
+                                <div class="error invisible">Le champ Adresse doit être renseigné</div>
+                                <label for="ville_synd"></label>
+                                <input placeholder="Ville" type="text" name="ville_synd" id="ville_synd">
+                                <div class="error invisible">Le champ Ville doit être renseigné</div>
+                                <label for="cp_synd"></label>
+                                <input placeholder="Code Postal" type="text" name="cp_synd" id="cp_synd">
+                                <div class="error invisible">Le champ Code postal doit être renseigné et être un nombre
+                                </div>
+                            </div>
+                            <label for="raison_sociale_synd"></label>
+                            <input placeholder="Raison Sociale" type="text" name="raison_sociale_synd"
+                                id="raison_sociale_synd">
+                            <div class="error invisible">Le champ Raison Sociale doit être renseigné</div>
+                            <label for="projet_synd"></label>
+                            <textarea class="text_form" placeholder="Description du projet..." name="projet_synd"
+                                id="projet_synd" rows="4" cols="50" wrap="hard" maxlength="500"></textarea>
+                            <div class="error invisible">Le champ Descriptio doit être renseigné</div>
+                            <div class=dossier_synd>
+                                <label for="document_synd"></label>
+                                <input type="file" id="document_synd" name="document_synd" accept=".pdf">
+                                <button class="button_envoyer">Envoyer</button>
+                            </div>
+                            <p>.PDF</p>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="img_form">
+                    <img src="images/logo_sunpower_ok.jpg" alt="Logo SunPower">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--Fin Formulaire de contact-->
+
+
+    </main>
+
+    <!-- fin main -->
+
+    <!-- _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ -->
+
+    <!-- Début footer -->
+
+    <footer class="footer">
+
+        <!-- Début Nous suivre -->
+
+        <div class="footer_suivre">
+            <p>Nous suivre </p>
+            <a target="_blank" href="https://www.instagram.com/sunpower/?hl=fr"><img src="images/Instagram.png"
+                    alt="Logo Instagram"></a>
+            <a target="_blank" href="https://www.linkedin.com/company/sunpower-corporation?originalSubdomain=fr"><img
+                    src="images/Linkedin.png" alt="Logo Linkedin"></a>
+            <a target="_blank"
+                href="https://twitter.com/SunPower?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                    src="images/Twitter.png" alt="Logo Twitter"></a>
+        </div>
+
+        <!-- Fin Nous suivre -->
+
+        <!-- Début Mentions Légales et Copyright -->
+        <div class="mention_fin">
+            <div class="footer_suivre2">
+                <p>Mentions légales</p>
+                <p class="footer_contact"><a href="contact.html">Contactez-nous</a></p>
+            </div>
+
+            <div class="footer_fin">
+                <source>Copyright © 2022 SUNPOWER SARL</source>
+            </div>
+        </div>
+        <!-- Fin Mentions Légales et Copyright -->
+
+    </footer>
+
+    <!-- Fin footer -->
+</body>
+
+</html>

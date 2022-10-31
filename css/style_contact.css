@@ -1,0 +1,682 @@
+/* --- Font --- */
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../font/Quicksand-Regular.ttf") format("truetype"),
+        url("../font/Quicksand-Bold.ttf") format("truetype"),
+        url("../font/Quicksand-Light.ttf") format("truetype");
+}
+
+
+/* --- Debut Header --- */
+
+/* --- Typographie --- */
+
+
+body h1 {
+    font-size: 50px;
+    color: #0C9B18;
+    font-family: "Quicksand";
+    font-weight: bold;
+    max-width: 100%;
+    height: auto;
+
+}
+
+body h2 {
+    font-size: 27px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Quicksand";
+
+}
+
+body h3 {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Quicksand";
+}
+
+body h4 {
+    font-size: 13px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Quicksand";
+}
+
+body p {
+    font-size: 12px;
+    color: #000000;
+    font-family: "Quicksand";
+}
+
+body a {
+    text-decoration: none;
+    font-size: 7px;
+    font-weight: bold;
+    color: #6ACC1A;
+    font-family: "Quicksand";
+    text-align: center;
+}
+
+/* --- Contour --- */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* --- Logo --- */
+
+.menu_logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu img {
+    width: 10%;
+    margin: 5px 10px 5px 10px;
+}
+
+
+.menu h1 {
+    text-align: left;
+    margin-left: 50px;
+}
+
+/* --- nav bar --- */
+
+@media (min-width: 1239px) {
+
+    #closeBtn {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .menu li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .border_right_navbar {
+        border-right: 1px solid #FDC50D;
+    }
+
+    .border_left_navbar {
+        border-left: 1px solid #FDC50D;
+    }
+
+    .menu a {
+        font-size: 23px;
+        color: #000000;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+
+    .menu a:hover {
+        -webkit-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+        transform: scale(1.07);
+        color: #107207;
+        transition: 0.2s;
+    }
+
+    #contact {
+        color: #107207;
+    }
+
+    .sidenav {
+        width: 100%;
+        display: flex;
+        margin-top: 2%;
+    }
+
+    #bouton_icon1:hover {
+        min-width: 35%;
+        transition: 0.8s;
+        cursor: pointer;
+    }
+
+    #bouton_icon2:hover {
+        min-width: 35%;
+        transition: 0.8s;
+        cursor: pointer;
+    }
+
+    #bouton_icon3:hover {
+        min-width: 35%;
+        transition: 0.8s;
+        cursor: pointer;
+    }
+
+    .button_envoyer:hover {
+        font-size: 16px;
+        transition: 0.5s;
+    }
+
+    .footer img:hover {
+        height: 40px;
+    }
+}
+
+
+@media screen and (max-width : 450px) {
+
+    h1 {
+        display: none;
+    }
+}
+
+/* --- burger menu --- */
+
+@media (max-width: 1239px) {
+    .sidenav {
+        font-size: 100px;
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: -250px;
+        background-color: rgba(212, 255, 176, 0.85);
+        padding-top: 60px;
+        transition: right 0.5s ease;
+    }
+
+    .border_right_navbar {
+        border-bottom: 1px solid #000000;
+        margin: 0 10%;
+    }
+
+    .border_left_navbar {
+        border-top: 1px solid #000000;
+        margin: 0 10%;
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        opacity: 1;
+    }
+
+    .sidenav a {
+        padding: 10px 10px 10px 1px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        opacity: 1;
+    }
+
+    .sidenav a:hover {
+        color: #111111;
+        text-shadow: 0 0 1.5px #818181;
+    }
+
+    .sidenav.active {
+        right: 0;
+    }
+
+    /* bouton qui ferme */
+
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: #0C9B18;
+        border-radius: 5px;
+        margin: 6px 0;
+    }
+}
+
+/* ---  fin burger menu --- */
+
+/* --- Fin Header --- */
+
+
+
+/*---Début Main---*/
+
+/*---Début Bannière---*/
+
+.banniere {
+    width: 100%;
+}
+
+.banniere img {
+    max-width: 100%;
+    object-fit: scale-down;
+}
+
+.titre_2 {
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+}
+
+/*---Fin Bannière---*/
+
+/*---Début sélection Cilent---*/
+
+.select_container {
+    width: 95%;
+    margin: auto
+}
+
+.select_icon {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.select_icon img {
+    width: 50%;
+}
+
+.select_card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#bouton_icon1 {
+    background-color: #ffffff;
+    border: none;
+    border: 1px solid #757575;
+    min-width: 30%;
+}
+
+.select_card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bouton_icon2 {
+    background-color: #ffffff;
+    border: none;
+    border: 1px solid #757575;
+    min-width: 30%;
+    margin: 0 2%;
+}
+
+.select_card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    min-width: 50%;
+}
+
+#bouton_icon3 {
+    background-color: #ffffff;
+    border: none;
+    border: 1px solid #757575;
+    min-width: 30%;
+}
+
+.contact_titre {
+    margin-top: 1%;
+}
+
+#contact_titre_synd {
+    margin-top: 6%;
+}
+
+#choisissez_votre_situation_titre {
+    font-size: 90%;
+    color: #107207;
+}
+
+/*---Fin sélection Cilent---/*
+
+/*---Début Formulaire---*/
+
+.formulaire_background {
+    margin-top: 5rem;
+    background-image: url("../images/background solar panel.webp");
+    width: 100%;
+    min-height: 600px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulaire_container {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    width: 70%;
+}
+
+#formulaire {
+    margin-left: 2%;
+}
+
+#formulaire h3 {
+    margin: 1rem 0;
+}
+
+#formulaire input {
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-right: 5%;
+}
+
+.error {
+    font-family: "Quicksand";
+    font-size: 12px;
+    color: red;
+}
+
+.invisible {
+    display: none;
+}
+
+.img_form img {
+    width: 70%;
+    padding: 10%;
+    border-left: 1px solid #6ACC1A;
+    padding-left: 20%;
+
+}
+
+input::file-selector-button {
+    padding: 0.5em;
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: #6acc1a;
+    border: none;
+    cursor: pointer;
+}
+
+.button_envoyer {
+    background-color: #FDC50D;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.formulaire_container p {
+    margin-top: 0.5rem;
+}
+
+/*---Début Formulaire particulier---*/
+
+.formulaire_contact_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 1rem;
+    padding-right: 10%;
+    margin-left: 5%;
+}
+
+#document_part {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    width: 100%;
+    border: none !important;
+}
+
+#projet_part {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: 150px;
+    min-width: 30%;
+    border-radius: 15px;
+    resize: none;
+    padding-left: 1%;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.dossier_part {
+    display: flex;
+    width: auto;
+    margin-top: 1rem;
+}
+
+/*---Fin Formulaire particulier---*/
+
+/*---Début Formulaire entreprise---*/
+
+.formulaire_contact_entr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    display: none;
+    padding-right: 10%;
+}
+
+
+#projet_entr {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: 150px;
+    min-width: 30%;
+    border-radius: 15px;
+    resize: none;
+    padding-left: 1%;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.dossier_entr {
+    display: flex;
+    width: auto;
+    margin-top: 1rem;
+}
+
+
+#document_entr {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    width: 100%;
+    border: none !important;
+}
+
+/*---Fin Formulaire entreprise---*/
+
+
+/*---Début Formulaire syndicat---*/
+
+.formulaire_contact_synd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    display: none;
+    padding-right: 10%;
+}
+
+
+#projet_synd {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: 150px;
+    min-width: 30%;
+    border-radius: 15px;
+    resize: none;
+    padding-left: 1%;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.dossier_synd {
+    display: flex;
+    width: auto;
+    margin-top: 1rem;
+}
+
+
+#document_synd {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    width: 100%;
+    border: none !important;
+}
+
+
+
+/*---fin Formulaire syndicat---*/
+
+
+
+/*---Fin Formulaire---*/
+
+
+
+/*---Fin du Main---*/
+
+
+/* --- Début Footer --- */
+
+.footer {
+    background-color: #757575;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* --- Réseaux sociaux --- */
+.footer_suivre {
+    display: flex;
+    align-items: center;
+    margin: 1em 3em 0 3em;
+}
+
+.footer_suivre2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+
+.footer_contact {
+    text-align: right;
+}
+
+.footer_fin {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 12px;
+    font-family: "Quicksand";
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 12px;
+    font-family: "Quicksand";
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+.footer_fin {
+    color: #ffffff;
+}
+
+.footer img {
+    width: auto;
+    height: 25px;
+}
+
+
+.mention_fin {
+    border-top: 1px solid #FDC50D;
+    margin: 0 3rem;
+}
+
+
+/* --- Fin Footer --- */
+
+
+/* --- Media Queries --- */
+
+
+@media screen and (max-width : 1200px) {
+
+    .img_form {
+        display: none;
+    }
+
+    .formulaire_contact_part,
+    .formulaire_contact_entr,
+    .formulaire_contact_synd {
+        padding-right: 0%;
+        margin: 2rem 0;
+    }
+
+    #formulaire {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    #formulaire {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width : 697px) {
+
+    .select_container h2 {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width : 600px) {
+    .text_form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width : 530px) {
+    .formulaire_container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width : 462px) {
+
+    .select_container h2 {
+        font-size: 12px;
+    }
+
+    .formulaire_container {
+        width: 90%;
+    }
+}

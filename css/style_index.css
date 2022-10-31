@@ -1,0 +1,902 @@
+/* --- Font --- */
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../font/Quicksand-Regular.ttf") format("truetype"),
+        url("../font/Quicksand-Bold.ttf") format("truetype"),
+        url("../font/Quicksand-Light.ttf") format("truetype");
+}
+
+
+/* --- Debut Header --- */
+
+/* --- Typographie --- */
+
+body h1 {
+    font-size: 50px;
+    color: #0C9B18;
+    font-family: "Quicksand";
+    font-weight: bold;
+    max-width: 100%;
+    height: auto;
+
+}
+
+body h2 {
+    font-size: 27px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Quicksand";
+
+}
+
+body h3 {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Quicksand";
+}
+
+body h4 {
+    font-size: 13px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Quicksand";
+}
+
+body p {
+    font-size: 12px;
+    color: #000000;
+    font-family: "Quicksand";
+}
+
+body a {
+    text-decoration: none;
+    font-size: 7px;
+    font-weight: bold;
+    color: #6ACC1A;
+    font-family: "Quicksand";
+    text-align: center;
+}
+
+/* --- Contour --- */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* --- Logo --- */
+
+.menu_logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.menu img {
+    width: 10%;
+    margin: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+
+.menu h1 {
+    text-align: left;
+    margin-left: 50px;
+}
+
+
+/* --- Fin Header --- */
+
+/* --- Début main --- */
+
+.ligne {
+    border-bottom: 1px solid #6ACC1A;
+    margin: auto;
+    width: 20%;
+}
+
+.banniere {
+    width: 100%;
+}
+
+.banniere img {
+    max-width: 100%;
+    height: auto;
+}
+
+.titre_2 {
+    text-align: center;
+    margin: 1rem;
+}
+
+/* --- début bouton devis --- */
+
+.devis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40%;
+}
+
+.devis_text {
+    text-align: center;
+    color: #ffffff;
+    font-size: 100%;
+    font-style: normal;
+}
+
+.bouton_devis {
+    background-color: #FDC50D;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+/* --- fin bouton devis --- */
+
+/* --- Début carte savoir-faire--- */
+.section_carte {
+    width: 95%;
+    display: flex;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.section_carte_titre {
+    width: 95%;
+    margin: 0px auto;
+    padding-top: 1rem;
+}
+
+.p_carte {
+    min-height: 50px;
+    display: flex;
+}
+
+.section_carte_lien {
+    display: flex;
+    align-items: end;
+    text-align: right;
+}
+
+.section_carte_activite {
+    width: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section_carte_activite img {
+    width: 100%;
+}
+
+.section_carte_activite p {
+    width: 95%;
+    padding: 0.5rem;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.section_carte_lien_activite {
+    text-align: right;
+    text-align: bottom;
+}
+
+.section_carte_recherche {
+    width: 30%;
+    margin: 0px auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section_carte_recherche img {
+    width: 100%;
+}
+
+.section_carte_recherche p {
+    width: 95%;
+    padding: 0.5rem;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.section_carte_lien_recherche {
+    text-align: right;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+
+.section_carte_accompagnement {
+    width: 30%;
+    margin: 0px auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.section_carte_accompagnement img {
+    width: 100%;
+}
+
+.section_carte_accompagnement p {
+    width: 95%;
+    padding: 0.5rem;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.section_carte_lien_accompagnement {
+    text-align: right;
+}
+
+
+
+
+/* --- Fin carte savoir-faire--- */
+
+
+/* --- Début Qui sommes nous ?--- */
+.section_qui_titre {
+    width: 95%;
+    margin: 0px auto;
+    padding-top: 1.5rem;
+}
+
+.section_qui {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 95%;
+}
+
+.section_qui h4 {
+    padding-bottom: 0.5rem;
+}
+
+.section_qui img {
+    width: 50%
+}
+
+.section_qui_container {
+    width: 100%;
+}
+
+.section_qui_par1 {
+    padding: 1rem
+}
+
+.section_qui_par2 {
+    padding: 1rem
+}
+
+
+/* --- Fin Qui sommes nous ?--- */
+
+
+/* --- Début Ils nous ont fait confiance --- */
+
+.section_conf_titre {
+    width: 95%;
+    margin: 0px auto;
+    padding-top: 1.5rem;
+}
+
+.section_conf_intro {
+    width: 95%;
+    margin: 0px auto;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.section_conf_image {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.section_conf_image_haut {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.section_conf_image_bas {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.section_conf_occ {
+    width: 14%;
+    margin: auto;
+}
+
+.section_conf_tou {
+    width: 20%;
+    margin: auto;
+}
+
+.section_conf_mtp {
+    width: 12.5%;
+    margin: auto;
+}
+
+.section_conf_psa {
+    width: 15%;
+    margin: auto;
+}
+
+
+/* --- Fin ils nous ont fait confiance --- */
+
+
+/* --- Début Nous contacter --- */
+.section_contact_titre {
+    width: 95%;
+    margin: 0px auto;
+    padding-top: 1.5rem;
+}
+
+.section_contact_intro {
+    width: 95%;
+    margin: 0px auto;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.section_contact {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 95%;
+}
+
+.section_contact button {
+    background-color: #6ACC1A;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 3%;
+}
+
+.section_contact button a {
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.section_contact_entr {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30%;
+    border-radius: 10px;
+}
+
+.section_contact_entr_bouton {
+    padding-left: 1rem;
+}
+
+.section_contact_entr img {
+    max-width: 16.5%;
+    height: auto;
+    padding-left: 1.5rem;
+}
+
+.entr_titre {
+    padding: 0.5rem;
+}
+
+.section_contact_synd {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30%;
+    border-radius: 10px;
+}
+
+.section_contact_synd_bouton {
+    padding-left: 1rem;
+}
+
+.section_contact_synd img {
+    max-width: 16.5%;
+    height: auto;
+    padding-left: 1.5rem;
+}
+
+.synd_titre {
+    padding: 0.5rem;
+}
+
+.section_contact_part {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30%;
+    border-radius: 10px;
+}
+
+.section_contact_part img {
+    max-width: 16.5%;
+    height: auto;
+    padding-left: 1.5rem;
+}
+
+.part_titre {
+    padding: 0.5rem;
+}
+
+
+/* --- Fin Nous contacter --- */
+
+
+
+/* --- Fin main --- */
+
+
+/* --- Début Footer --- */
+
+.footer {
+    background-color: #757575;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* --- Réseaux sociaux --- */
+.footer_suivre {
+    display: flex;
+    align-items: center;
+    margin: 1em 3em 0 3em;
+
+}
+
+.footer_suivre2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+
+.footer_contact {
+
+    text-align: right;
+}
+
+.footer_fin {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 12px;
+    font-family: "Quicksand";
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 12px;
+    font-family: "Quicksand";
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+.footer_fin {
+    color: #ffffff;
+}
+
+.footer img {
+    width: auto;
+    height: 25px;
+}
+
+
+.mention_fin {
+    border-top: 1px solid #FDC50D;
+    margin: 0 3rem;
+}
+
+
+/* --- Fin Footer --- */
+
+
+/* --- Media Queries --- */
+
+
+/* --- nav bar --- */
+
+@media (min-width: 1150px) {
+
+    #closeBtn {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .menu li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .border_right_navbar {
+        border-right: 1px solid #FDC50D;
+    }
+
+    .border_left_navbar {
+        border-left: 1px solid #FDC50D;
+    }
+
+    .menu a {
+        font-size: 23px;
+        color: #000000;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+
+    .menu a:hover {
+        -webkit-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+        transform: scale(1.07);
+        color: #107207;
+    }
+
+    #accueil {
+        color: #107207;
+    }
+
+    .sidenav {
+        width: 100%;
+        display: flex;
+        margin-top: 2%;
+    }
+
+    /* --- fin du hover sur tous les elements a moins de 1150px de large --- */
+
+    .devis_text:hover {
+        text-align: center;
+        color: #ffffff;
+        font-size: 120%;
+        font-style: normal;
+        transition: 0.5s;
+    }
+
+    #en_savoir_plus1:hover {
+        font-size: 15px;
+        transition: 0.5s;
+    }
+
+    #en_savoir_plus2:hover {
+        font-size: 15px;
+        transition: 0.5s;
+    }
+
+    #en_savoir_plus3:hover {
+        font-size: 15px;
+        transition: 0.5s;
+    }
+
+    .section_carte_activite:hover {
+        width: 35%;
+        transition: 1.2s;
+    }
+
+    .section_carte_recherche:hover {
+        width: 35%;
+        transition: 1.2s;
+    }
+
+    .section_carte_accompagnement:hover {
+        width: 35%;
+        transition: 1.2s;
+    }
+
+    .section_contact button a:hover {
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+        font-style: normal;
+        transition: 0.5s;
+    }
+
+    .section_contact_entr:hover {
+        width: 32%;
+        transition: 0.5s;
+    }
+
+    .section_contact_synd:hover {
+        width: 32%;
+        transition: 0.5s;
+    }
+
+    .section_contact_part:hover {
+        width: 32%;
+        transition: 0.5s;
+    }
+
+    .footer img:hover {
+        height: 40px;
+    }
+
+}
+
+/* --- burger menu --- */
+
+@media (max-width: 1150px) {
+    .sidenav {
+        font-size: 100px;
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: -250px;
+        background-color: rgba(212, 255, 176, 0.85);
+        padding-top: 60px;
+        transition: right 0.5s ease;
+    }
+
+    .border_right_navbar {
+        border-bottom: 1px solid #000000;
+        margin: 0 10%;
+    }
+
+    .border_left_navbar {
+        border-top: 1px solid #000000;
+        margin: 0 10%;
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        opacity: 1;
+    }
+
+    .sidenav a {
+        padding: 10px 10px 10px 1px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        opacity: 1;
+    }
+
+    .sidenav a:hover {
+        color: #111111;
+        text-shadow: 0 0 1.5px #818181;
+        transition: 0.2s;
+    }
+
+    .sidenav.active {
+        right: 0;
+    }
+
+    /* bouton qui ferme */
+
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: #0C9B18;
+        border-radius: 5px;
+        margin: 6px 0;
+    }
+
+}
+
+/* ---  fin burger menu --- */
+
+/* Lignes de séparation */
+
+@media screen and (max-width : 1300px) {
+    .ligne {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width : 847px) {
+    .ligne {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width : 540px) {
+    .ligne {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .ligne {
+        width: 60%;
+    }
+}
+
+/* --- Début Media Queries Qui sommes nous et Ils nous ont fait confiance --- */
+
+@media screen and (max-width : 1100px) {
+    .section_qui {
+        flex-direction: column;
+    }
+
+    .section_qui img {
+        width: 95%
+    }
+
+
+    .section_conf_image {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* --- Fin Media Queries Qui sommes nous et Ils nous ont fait confiance --- */
+
+
+
+/* --- Début Media Queries Nous contacter --- */
+
+@media screen and (max-width : 950px) {
+
+    .section_contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: auto;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        width: 95%;
+    }
+
+    .section_contact button {
+        background-color: #6ACC1A;
+        border-radius: 50px;
+        border: none;
+        padding: 0.5rem 1rem;
+    }
+
+    .section_contact button a {
+        text-align: center;
+        color: #ffffff;
+        font-size: 12px;
+        font-style: normal;
+    }
+
+    .section_contact_entr {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 95%;
+        padding: 1% 0;
+        border-radius: 10px;
+    }
+
+    .section_contact_synd {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 95%;
+        border-radius: 10px;
+        padding: 3% 0;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section_contact_part {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 95%;
+        padding: 2% 0;
+        border-radius: 10px;
+    }
+
+    .section_contact_entr img {
+        width: 15%;
+        padding-left: 3%;
+    }
+
+    .section_contact_synd img {
+        width: 15%;
+        padding-left: 3%;
+    }
+
+    .section_contact_part img {
+        width: 15%;
+        padding-left: 3%;
+        padding-right: 1.5%;
+    }
+
+
+}
+
+/* --- Fin Media Queries Nous contacter --- */
+
+
+/* --- Début Media Queries carte savoir faire --- */
+
+@media screen and (max-width : 750px) {
+
+    .section_carte {
+        width: 95%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .section_carte_activite {
+        width: 95%;
+    }
+
+    .section_carte_recherche {
+        width: 95%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .section_carte_accompagnement {
+        width: 95%;
+    }
+
+}
+
+/* --- fin Media Queries carte savoir faire --- */
+
+
+/* --- Début Media Queries Titre --- */
+@media screen and (max-width : 450px) {
+
+    h1 {
+        display: none
+    }
+
+    .titre_2 {
+        font-size: 20px;
+    }
+
+}
+
+/* --- Fin Media Queries Titre --- */
